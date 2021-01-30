@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>INDIA CORONA STATS</title>
+    <Script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></Script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body style="background-image: url(corona.jpeg);">
+
+    <h1 style="background-image: url(head.jpg);"><span class="heading">INDIA CORONA STATS</span></h1>
+    <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn"> About(COVID-19)<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#company"></a>
+                <a href="#team"></a>
+
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Data<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#bring">d1</a>
+                <a href="#deliver">d2</a>
+                <a href="#package">d3</a>
+                <a href="#express">d4</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Health Guidance<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#bring">h1</a>
+                <a href="#deliver">h2</a>
+                <a href="#package">h3</a>
+                <a href="#express">h4</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="container">
+        <div class="C">
+            <div style="background-image: url(total.jpg);" class="box">
+
+                <div class="content">
+
+                    <h2>Total</h2>
+                    <h2>
+                        <a id="total" href="table.html"></a>
+
+                    </h2>
+
+
+                    <h3 class="new"> ↑(<span id="dailyt"> </span>)</h3>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="C">
+            <div style="background-image: url(recovered.jpg);" class="box">
+                <div class="content">
+                    <h2>Recovered</h2>
+                    <h2>
+                        <a id="recovered" href="table.html"></a>
+                    </h2>
+                    <h3 class="new"> ↑(<span id="dailyr"> </span>)</h3>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="C">
+            <div style="background-image: url(deaths.jpg);" class="box">
+                <div class="content">
+                    <h2>Deaths</h2>
+                    <h2>
+                        <a id="deaths" href="table.html"></a>
+                    </h2>
+
+
+                    <h3 class="new"> ↑(<span id="dailyd"> </span>)</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container2">
+        <div class="containerR">
+            <canvas class="canvas" id="chart"></canvas></div>
+    </div>
+
+
+
+    <section class="scontainer">
+
+        <div class="s1container">
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(first);">
+                    <h2>t</h2>
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href="https://www.moneycontrol.com/news/photos/coronavirus/in-pics-timeline-how-coronavirus-pandemic-took-india-in-its-grip-5743871.html">Timeline: How coronavirus pandemic took India in its grip.</a>
+                    </h2>
+
+                </div>
+            </div>
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(highest.jpg);">
+
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href="https://www.bbc.com/news/world-asia-india-53969118">India surpasses US for highest single-day rise in Covid-19 cases.</a>
+                    </h2>
+
+                </div>
+            </div>
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(lockdown.jpg);">
+
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href="https://scroll.in/article/957564/not-china-not-italy-indias-coronavirus-lockdown-is-the-harshest-in-the-world">
+                        Not China, not Italy: India’s coronavirus lockdown is the harshest in the world.</h2>
+                    </a></h2>
+
+                </div>
+            </div>
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(states.png);">
+
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href="https://centerforpolicyimpact.org/2020/07/28/how-well-is-india-responding-to-covid-19/">HOW WELL IS INDIA RESPONDING TO COVID-19?</a>
+                    </h2>
+
+                </div>
+            </div>
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(unlock.jpg);">
+
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href=" https://timesofindia.indiatimes.com/india/unlocking-india-what-day-1-was-like/articleshow/76277664.cms ">India stepped out to a post-Covid world on June 8,2020</a>
+
+
+                    </h2>
+
+                </div>
+            </div>
+            <div class="s1item">
+                <div class="s1top" style="background-image: url(vaccine.jpg);">
+
+                </div>
+                <div class="s1bottom">
+                    <h2 class="conten">
+                        <a href="https://www.bharatbiotech.com/covaxin.html">India's First indigenous COVID-19 Vaccine.</a>
+                    </h2>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <div>
+        <footer class="footer-basic">
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Vishal.Kunal.dev©2020</p>
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

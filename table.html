@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>INDIA CORONA STATS</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="table.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background-image: url(corona.jpeg);">
+
+    <h1 style="background-image: url(head.jpg);"><span class="heading"> INDIA CORONA STATS</span></h1>
+    <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn"> About(COVID-19)<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#company"></a>
+                <a href="#team"></a>
+
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Data<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#bring">d1</a>
+                <a href="#deliver">d2</a>
+                <a href="#package">d3</a>
+                <a href="#express">d4</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Health Guidance<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#bring">h1</a>
+                <a href="#deliver">h2</a>
+                <a href="#package">h3</a>
+                <a href="#express">h4</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Here a loader is created which  
+             loads till response comes -->
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <h1 class="tableh" style="background-image: url(head.jpg);"><span class="heading">COVID DATA</span></h1>
+    <!-- table for showing data -->
+    <table id="covid">
+
+        <tr>
+
+
+            <th> <input type="text" id="Input" onkeyup="myFunction()" placeholder="Search for State..">STATES</th>
+            <th>ACTIVE</th>
+            <th>CONFIRMED</th>
+            <th>RECOVERED</th>
+            <th>DEATH</th>
+
+
+        </tr>
+    </table>
+</body>
